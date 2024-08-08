@@ -17,11 +17,11 @@ public class balexCompany {
 
     public static void calculatePay(double basePay, int hoursWorked) {
         if (basePay < MINIMUM_WAGE) {
-            System.out.println("Base pay must be at least $8.00 per hour.");
+            System.out.println("Error: Base pay must be at least $8.00 per hour.");
             return;
         }
         if (hoursWorked > MAX_HOURS) {
-            System.out.println("Hours worked cannot exceed 60 hours per week.");
+            System.out.println("Error: Hours worked cannot exceed 60 hours per week.");
             return;
         }
 
